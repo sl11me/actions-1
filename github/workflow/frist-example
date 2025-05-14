@@ -1,0 +1,16 @@
+name: Oremier workflow
+
+on: push
+
+jobs:
+    first_job:
+        runs_on: ubuntu-latest
+        steps: 
+          - name: Welcome
+            run: echo "Premier workflow"
+          
+          - name: list files
+            run: ls
+
+          - name: read files
+            run: cat README.md
